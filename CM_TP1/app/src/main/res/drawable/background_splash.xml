@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/background" />
+    </item>
+
+    <item
+        android:width="330dp"
+        android:height="320dp"
+        android:bottom="150dp"
+        android:drawable="@drawable/icon"
+        android:gravity="center" />
+
+    <!-- COLOCAR AQUI UM GIF DE DAR LOG SCREEN
+    <pl.droidsonroids.gif.GifImageView
+        android:width="300dp"
+        android:height="300dp"
+        android:src="@drawable/loading"
+        />-->
+
+
+</layer-list>
+

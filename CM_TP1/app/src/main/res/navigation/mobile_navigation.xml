@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.cmteam4.throughoutportugal.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_navigation_dashboard_to_navigation_test"
+            app:destination="@id/navigation_test"
+            app:enterAnim="@anim/fragment_fade_enter" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.cmteam4.throughoutportugal.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_test"
+        android:name="com.cmteam4.throughoutportugal.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.cmteam4.throughoutportugal.ui.profile.ProfileFragment"
+        android:label="@string/title_profile" />
+    <fragment
+        android:id="@+id/navigation_favorites"
+        android:name="com.cmteam4.throughoutportugal.ui.favorites.FavoritesFragment"
+        android:label="@string/title_favorites"
+        tools:layout="@layout/fragment_favorites" />
+    <fragment
+        android:id="@+id/navigation_about"
+        android:name="com.cmteam4.throughoutportugal.ui.about.AboutFragment"
+        android:label="@string/title_about" />
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.cmteam4.throughoutportugal.ui.settings.SettingsFragment"
+        android:label="@string/title_settings" />
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.cmteam4.throughoutportugal.ui.start.StartFragment"
+        android:label="@string/title_home" />
+</navigation>

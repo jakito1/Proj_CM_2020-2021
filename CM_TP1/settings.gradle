@@ -1,0 +1,2 @@
+rootProject.name = "Throughout Portugal"
+include ':app'
